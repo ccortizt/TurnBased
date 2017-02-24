@@ -1,0 +1,136 @@
+Mono path[0] = 'C:/Users/Public/Documents/Unity Projects/turn based/test_Data/Managed'
+Mono path[1] = 'C:/Users/Public/Documents/Unity Projects/turn based/test_Data/Mono'
+Mono config path = 'C:/Users/Public/Documents/Unity Projects/turn based/test_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Public/Documents/Unity Projects/turn based/test_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55209
+Multi-casting "[IP] 192.168.56.1 [Port] 55209 [Flags] 2 [Guid] 3113276013 [EditorId] 14864558 [Version] 1048832 [Id] WindowsPlayer(Camilo) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55209]
+PlayerConnection already initialized - listening to [0.0.0.0:55209]
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 820M         (ID=0x1140)
+    Vendor:   NVIDIA
+    VRAM:     1994 MB
+    Driver:   10.18.10.3496
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.209 seconds
+Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.343361 ms
+updating position: 0 5 Player 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:UpdateCurrentPos() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:210)
+PlayerController:Start() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:41)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 210)
+
+Player 2 pushed!
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:185)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 185)
+
+1 , 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameBoardController:IsBlockFilled(Int32, Int32) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\GameBoardController.cs:101)
+PlayerController:IsBlockFilled(Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:282)
+PlayerController:CanMoveToPosition(Single, Single, String, Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:337)
+PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:120)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/GameBoardController.cs Line: 101)
+
+no regreso u False d False r False l True
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:144)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 144)
+
+0 , 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameBoardController:IsBlockFilled(Int32, Int32) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\GameBoardController.cs:101)
+PlayerController:IsBlockFilled(Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:282)
+PlayerController:CanMoveToPosition(Single, Single, String, Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:337)
+PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:152)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/GameBoardController.cs Line: 101)
+
+regreso
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:165)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 165)
+
+0 , 6
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameBoardController:IsBlockFilled(Int32, Int32) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\GameBoardController.cs:101)
+PlayerController:IsBlockFilled(Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:282)
+PlayerController:CanMoveToPosition(Single, Single, String, Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:337)
+PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:88)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/GameBoardController.cs Line: 101)
+
+no regreso u True d False r False l False
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:111)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 111)
+
+Player 2 pushed!
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:185)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 185)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.515401 ms
+System memory in use before: 23.0 MB.
+System memory in use after: 23.1 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 344.
+Total: 0.454366 ms (FindLiveObjects: 0.028027 ms CreateObjectMapping: 0.034738 ms MarkObjects: 0.373441 ms  DeleteObjects: 0.006316 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2b24 -> priority: 1 
