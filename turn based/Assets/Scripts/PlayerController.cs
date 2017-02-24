@@ -42,7 +42,7 @@ public class PlayerController : NetworkBehaviour
         GameObject.Find("GameManager").GetComponent<TurnController>().AddPlayer(gameObject);
 
         if (isLocalPlayer)
-            UpdateCurrentPos();
+            CmdUpdateCurrentPos();
 
     }
 
@@ -211,12 +211,22 @@ public class PlayerController : NetworkBehaviour
     }
 
 
-    private void UpdateCurrentPos()
+    [Command]
+    private void CmdUpdateCurrentPos()
     {
         currentPosX = xPosTranformed(transform.position.x);
         currentPosY = yPosTranformed(transform.position.y);
         Debug.LogError("CurrentUpdate " + currentPosX + " " + currentPosY);
         
+    }
+
+    [ClientRpc]
+    private void RpcUpdateCurrentPos()
+    {
+        currentPosX = xPosTranformed(transform.position.x);
+        currentPosY = yPosTranformed(transform.position.y);
+        Debug.LogError("CurrentUpdate " + currentPosX + " " + currentPosY);
+
     }
 
     private int xPosTranformed(float n)
@@ -358,20 +368,25 @@ public class PlayerController : NetworkBehaviour
 
         var p1 = (GameObject)Instantiate(Resources.Load("Prefabs/Cube1"), new Vector3(transform.position.x, transform.position.y, -1f), Quaternion.identity);
                 
-        Debug.LogError("before reset turn data");
         movesLeft -= 1;
-        ResetCanMoves();
-        Debug.LogError("before update");
-        UpdateCurrentPos();
-        Debug.LogError("After update");
+        ResetCanMoves();        
+        
+        if (isServer)
+            RpcUpdateCurrentPos();
+        else
+            CmdUpdateCurrentPos();
+        
         gameBoardManager.GetComponent<GameBoardController>().FillBlock(currentPosX, currentPosY);
+        
         //other cases here;
+
         NetworkServer.Spawn(p1);
+
         if (movesLeft == 0)
         {
             movesLeft += 1;
             Debug.Log("SWITCHING " + gameObject.name);
-            ////gameBoardManager.GetComponent<TurnController>().SwitchTurn();
+            
             try
             {
                 if(isServer){

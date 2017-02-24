@@ -52,14 +52,12 @@ public class TurnController : NetworkBehaviour
 
     public void AddPlayer(GameObject player)
     {
-        numPlayers++;
-      
+        numPlayers++;      
 
         if (numPlayers == 2)
         {            
             GameObject.Find("Player 2").GetComponent<PlayerController>().enabled = false; 
         }
-
 
     }
 
@@ -84,7 +82,6 @@ public class TurnController : NetworkBehaviour
             timerText.text = "player1 turn";
             Debug.LogError("Toggled");
         }
-
 
     }
 
