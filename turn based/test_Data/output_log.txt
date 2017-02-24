@@ -1,11 +1,11 @@
-Mono path[0] = 'C:/Users/Public/Documents/Unity Projects/turn based/test_Data/Managed'
-Mono path[1] = 'C:/Users/Public/Documents/Unity Projects/turn based/test_Data/Mono'
-Mono config path = 'C:/Users/Public/Documents/Unity Projects/turn based/test_Data/Mono/etc'
-PlayerConnection initialized from C:/Users/Public/Documents/Unity Projects/turn based/test_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55209
-Multi-casting "[IP] 192.168.56.1 [Port] 55209 [Flags] 2 [Guid] 3113276013 [EditorId] 14864558 [Version] 1048832 [Id] WindowsPlayer(Camilo) [Debug] 0" to [225.0.0.222:54997]...
-Started listening to [0.0.0.0:55209]
-PlayerConnection already initialized - listening to [0.0.0.0:55209]
+Mono path[0] = 'C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/test_Data/Managed'
+Mono path[1] = 'C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/test_Data/Mono'
+Mono config path = 'C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/test_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/test_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55063
+Multi-casting "[IP] 192.168.56.1 [Port] 55063 [Flags] 2 [Guid] 1397823260 [EditorId] 4026970553 [Version] 1048832 [Id] WindowsPlayer(Camilo) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55063]
+PlayerConnection already initialized - listening to [0.0.0.0:55063]
 Initialize engine version: 5.5.1f1 (88d00a7498cd)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -15,122 +15,415 @@ Direct3D:
     VRAM:     1994 MB
     Driver:   10.18.10.3496
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.209 seconds
-Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Public\Documents\Unity Projects\turn based\test_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.291 seconds
+Platform assembly: C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\test_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.343361 ms
-updating position: 0 5 Player 2
+UnloadTime: 1.721934 ms
+intoggle
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
-PlayerController:UpdateCurrentPos() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:210)
-PlayerController:Start() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:41)
+TurnController:RpcTogglePlayer() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:69)
+TurnController:InvokeRpcRpcTogglePlayer(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
  
-(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 210)
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 69)
 
-Player 2 pushed!
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:185)
+NullReferenceException: Object reference not set to an instance of an object
+  at TurnController.RpcTogglePlayer () [0x00015] in C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:71 
+  at TurnController.InvokeRpcRpcTogglePlayer (UnityEngine.Networking.NetworkBehaviour obj, UnityEngine.Networking.NetworkReader reader) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkIdentity.HandleRPC (Int32 cmdHash, UnityEngine.Networking.NetworkReader reader) [0x00144] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659 
+  at UnityEngine.Networking.ClientScene.OnRPCMessage (UnityEngine.Networking.NetworkMessage netMsg) [0x00072] in C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748 
+  at UnityEngine.Networking.NetworkConnection.HandleReader (UnityEngine.Networking.NetworkReader reader, Int32 receivedSize, Int32 channelId) [0x00130] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468 
+  at UnityEngine.Networking.NetworkConnection.HandleBytes (System.Byte[] buffer, Int32 receivedSize, Int32 channelId) [0x0000c] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424 
+  at UnityEngine.Networking.NetworkConnection.TransportRecieve (System.Byte[] bytes, Int32 numBytes, Int32 channelId) [0x00001] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576 
+  at UnityEngine.Networking.NetworkClient.Update () [0x001d5] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735 
+  at UnityEngine.Networking.NetworkClient.UpdateClients () [0x00024] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950 
+  at UnityEngine.Networking.NetworkIdentity.UNetStaticUpdate () [0x00006] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089 
  
-(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 185)
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 71)
 
-1 , 5
+Trying to send command for object without authority.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkBehaviour:SendCommandInternal(NetworkWriter, Int32, String) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:58)
+PlayerController:CallCmdPutObject()
+PlayerController:Start() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:30)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkBehaviour.cs Line: 58)
+
+player 1 set
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+PlayerController:Start() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:34)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 34)
+
+player 2 set
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+PlayerController:Start() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:39)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 39)
+
+0 5
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
-GameBoardController:IsBlockFilled(Int32, Int32) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\GameBoardController.cs:101)
-PlayerController:IsBlockFilled(Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:282)
-PlayerController:CanMoveToPosition(Single, Single, String, Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:337)
-PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:120)
+PlayerController:yPosTranformed(Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:232)
+PlayerController:UpdateCurrentPos() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:220)
+PlayerController:Start() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:45)
  
-(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/GameBoardController.cs Line: 101)
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 232)
+
+CurrentUpdate 0 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+PlayerController:UpdateCurrentPos() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:221)
+PlayerController:Start() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:45)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 221)
+
+intoggle
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+TurnController:RpcTogglePlayer() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:69)
+TurnController:InvokeRpcRpcTogglePlayer(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 69)
+
+termina player1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+TurnController:RpcTogglePlayer() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:73)
+TurnController:InvokeRpcRpcTogglePlayer(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 73)
+
+Toggled
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+TurnController:RpcTogglePlayer() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:77)
+TurnController:InvokeRpcRpcTogglePlayer(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 77)
+
+0 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:yPosTranformed(Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:232)
+PlayerController:IsBlockFilled(Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:297)
+PlayerController:CanMoveToPosition(Single, Single, String, Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:345)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:125)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 232)
+
+Current 0 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+PlayerController:IsCurrentPosition(Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:238)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:137)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 238)
+
+0 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:yPosTranformed(Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:232)
+PlayerController:IsCurrentPosition(Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:239)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:137)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 232)
+
+Next 1 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+PlayerController:IsCurrentPosition(Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:239)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:137)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 239)
 
 no regreso u False d False r False l True
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:144)
+UnityEngine.Debug:LogError(Object)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:151)
  
-(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 144)
-
-0 , 5
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-GameBoardController:IsBlockFilled(Int32, Int32) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\GameBoardController.cs:101)
-PlayerController:IsBlockFilled(Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:282)
-PlayerController:CanMoveToPosition(Single, Single, String, Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:337)
-PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:152)
- 
-(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/GameBoardController.cs Line: 101)
-
-regreso
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:165)
- 
-(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 165)
-
-0 , 6
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-GameBoardController:IsBlockFilled(Int32, Int32) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\GameBoardController.cs:101)
-PlayerController:IsBlockFilled(Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:282)
-PlayerController:CanMoveToPosition(Single, Single, String, Single, Single) (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:337)
-PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:88)
- 
-(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/GameBoardController.cs Line: 101)
-
-no regreso u True d False r False l False
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:111)
- 
-(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 111)
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 151)
 
 Player 2 pushed!
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-PlayerController:FixedUpdate() (at C:\Users\Public\Documents\Unity Projects\turn based\Assets\Scripts\PlayerController.cs:185)
+UnityEngine.Debug:LogError(Object)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:193)
  
-(Filename: C:/Users/Public/Documents/Unity Projects/turn based/Assets/Scripts/PlayerController.cs Line: 185)
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 193)
 
+intoggle
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+TurnController:RpcTogglePlayer() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:69)
+TurnController:InvokeRpcRpcTogglePlayer(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 69)
+
+termina player2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+TurnController:RpcTogglePlayer() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:81)
+TurnController:InvokeRpcRpcTogglePlayer(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 81)
+
+Toggled
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+TurnController:RpcTogglePlayer() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:85)
+TurnController:InvokeRpcRpcTogglePlayer(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 85)
+
+intoggle
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+TurnController:RpcTogglePlayer() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:69)
+TurnController:InvokeRpcRpcTogglePlayer(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 69)
+
+termina player1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+TurnController:RpcTogglePlayer() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:73)
+TurnController:InvokeRpcRpcTogglePlayer(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 73)
+
+Toggled
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+TurnController:RpcTogglePlayer() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\TurnController.cs:77)
+TurnController:InvokeRpcRpcTogglePlayer(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:659)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:748)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/TurnController.cs Line: 77)
+
+0 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:yPosTranformed(Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:232)
+PlayerController:IsBlockFilled(Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:297)
+PlayerController:CanMoveToPosition(Single, Single, String, Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:345)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:159)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 232)
+
+Current 0 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+PlayerController:IsCurrentPosition(Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:238)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:170)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 238)
+
+0 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:yPosTranformed(Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:232)
+PlayerController:IsCurrentPosition(Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:239)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:170)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 232)
+
+Next 0 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+PlayerController:IsCurrentPosition(Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:239)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:170)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 239)
+
+0 5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:yPosTranformed(Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:232)
+PlayerController:IsCurrentPosition(Single, Single) (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:240)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:170)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 232)
+
+regreso u True d True r True l True
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+PlayerController:Update() (at C:\Users\Public\Documents\Unity Projects\TurnBasedRepo\turn based\Assets\Scripts\PlayerController.cs:174)
+ 
+(Filename: C:/Users/Public/Documents/Unity Projects/TurnBasedRepo/turn based/Assets/Scripts/PlayerController.cs Line: 174)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.515401 ms
-System memory in use before: 23.0 MB.
-System memory in use after: 23.1 MB.
+ClientDisconnected due to error: Timeout
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+UnityEngine.Networking.NetworkManager:OnClientDisconnect(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:1125)
+UnityEngine.Networking.NetworkManager:OnClientDisconnectInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:954)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:217)
+UnityEngine.Networking.NetworkConnection:InvokeHandlerNoData(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:199)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 1125)
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 344.
-Total: 0.454366 ms (FindLiveObjects: 0.028027 ms CreateObjectMapping: 0.034738 ms MarkObjects: 0.373441 ms  DeleteObjects: 0.006316 ms)
+UnloadTime: 4.933289 ms
+System memory in use before: 23.4 MB.
+System memory in use after: 23.4 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 476.
+Total: 0.558977 ms (FindLiveObjects: 0.043818 ms CreateObjectMapping: 0.030791 ms MarkObjects: 0.460682 ms  DeleteObjects: 0.010658 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2b24 -> priority: 1 
+  Thread -> id: 1f94 -> priority: 1 
