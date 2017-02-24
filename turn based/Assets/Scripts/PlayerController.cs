@@ -61,21 +61,20 @@ public class PlayerController : NetworkBehaviour
                     else
                     {
                         transform.position = transform.position + transform.up;
-
+                        
                         if (IsCurrentPosition(transform.position.x, transform.position.y))
                         {
-                            Debug.Log("regreso ");
+                            
                             ResetCanMoves();
                         }
 
                         else
-                        {
-                            
+                        {                            
                             canMoveUp = false;
                             canMoveDown = true;
                             canMoveLeft = false;
                             canMoveRight = false;
-                            Debug.Log("no regreso" + " u " + canMoveUp + " d " + canMoveDown + " r " + canMoveRight + " l " + canMoveLeft);
+                           
 
                         }
                     }
@@ -92,10 +91,10 @@ public class PlayerController : NetworkBehaviour
                     else
                     {
                         transform.position = transform.position - transform.up;
-
+                        
                         if (IsCurrentPosition(transform.position.x, transform.position.y))
                         {
-                            Debug.Log("regreso");
+                        
                             ResetCanMoves();
                         }
                         else
@@ -106,7 +105,7 @@ public class PlayerController : NetworkBehaviour
                             canMoveLeft = false;
                             canMoveRight = false;
 
-                            Debug.Log("no regreso" + " u " + canMoveUp + " d " + canMoveDown + " r " + canMoveRight + " l " + canMoveLeft);
+                           
                         }
                     }
                 }
@@ -121,11 +120,14 @@ public class PlayerController : NetworkBehaviour
                     }
                     else
                     {
+                        
+
                         transform.position = transform.position + transform.right;
+                        
 
                         if (IsCurrentPosition(transform.position.x, transform.position.y))
                         {
-                            Debug.Log("regreso");
+                            
                             ResetCanMoves();
                         }
                         else
@@ -136,7 +138,7 @@ public class PlayerController : NetworkBehaviour
                             canMoveLeft = true;
                             canMoveRight = false;
 
-                            Debug.Log("no regreso" + " u " + canMoveUp + " d " + canMoveDown + " r " + canMoveRight + " l " + canMoveLeft);
+                            
                         }
                     }
                 }
@@ -151,10 +153,12 @@ public class PlayerController : NetworkBehaviour
                     }
                     else
                     {
+                        
                         transform.position = transform.position - transform.right;
+                        
                         if (IsCurrentPosition(transform.position.x, transform.position.y))
                         {
-                            Debug.Log("regreso");
+                            
                             ResetCanMoves();
                         }
                         else
@@ -165,7 +169,7 @@ public class PlayerController : NetworkBehaviour
                             canMoveLeft = false;
                             canMoveRight = true;
 
-                            Debug.Log("no regreso" + " u " + canMoveUp + " d " + canMoveDown + " r " + canMoveRight + " l " + canMoveLeft);
+                            
                         }
                     }
                 }
@@ -198,8 +202,8 @@ public class PlayerController : NetworkBehaviour
     private void UpdateCurrentPos()
     {
         currentPosX = xPosTranformed(transform.position.x);
-        currentPosY = xPosTranformed(transform.position.y);
-        Debug.Log("updating position: "+currentPosX + " " + currentPosY + " " + gameObject.name);
+        currentPosY = yPosTranformed(transform.position.y);
+        
     }
 
     private int xPosTranformed(float n)
@@ -209,11 +213,14 @@ public class PlayerController : NetworkBehaviour
 
     private int yPosTranformed(float n)
     {
+        Debug.Log(n + " "+( -n + 5));
         return (int)-n + 5;
     }
 
     private bool IsCurrentPosition(float x, float y)
     {
+        Debug.Log("Current " + currentPosX + " " + currentPosY);
+        Debug.Log("Next " + xPosTranformed(x) + " " + yPosTranformed(y));
         return (xPosTranformed(x) == currentPosX && yPosTranformed(y) == currentPosY);
     }
 
@@ -323,12 +330,13 @@ public class PlayerController : NetworkBehaviour
         if (!CanMoveDir(dir))
         {
             Debug.LogError("DIRECCION NO HABILITADA");
+            Debug.Log(" u " + canMoveUp + " d " + canMoveDown + " r " + canMoveRight + " l " + canMoveLeft);
             return false;
         }
 
         if (IsBlockFilled(x1, y1) && !IsCurrentPosition(x1, y1))
         {
-            Debug.LogError("POSICION OCUPADA Y NO INICIAL");
+            Debug.LogError("POcIsION OCUPADA Y NO INICIAL");
             return false;
         }
         else
@@ -336,7 +344,6 @@ public class PlayerController : NetworkBehaviour
             return true;
         }
 
-        //return (IsInEdge(x, y, dir) || CanMoveDir(dir) || IsBlockFilled(x1, y1)) && !IsCurrentPosition(x1, y1);
     }
 
     

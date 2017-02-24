@@ -98,7 +98,6 @@ public class GameBoardController: MonoBehaviour{
 
     public bool IsBlockFilled(int x, int y)
     {
-        Debug.Log(x+" , "+y);
         if (x < 0 || x > size - 1 || y < 0 || y > size - 1)
             return true;
 
